@@ -1,0 +1,35 @@
+.user-card {
+    border-top: 1px solid #bdbdbd;
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #bdbdbd;
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .user-avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        margin-right: 10px;
+    }
+
+    .m-r-1 {
+        margin-right: 1rem;
+    }
+
+    .user-name {
+        color: #58a6ff;
+    }
+
+    .user-login {
+        color: #202020;
+    }
+}

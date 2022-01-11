@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+// src
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { store, sagaMiddleware } from './redux/store';
+import rootSaga from './sagas';
+
+sagaMiddleware.run(rootSaga);
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
